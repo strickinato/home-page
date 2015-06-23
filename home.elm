@@ -27,7 +27,7 @@ render (w',h') mario =
       verb = if | mario.y  >  0 -> "jump"
                 | mario.vx /= 0 -> "walk"
                 | otherwise     -> "stand"
-      src = "/imgs/mario/" ++ verb ++ "/" ++ mario.dir ++ ".gif"
+      src = "imgs/mario/" ++ verb ++ "/" ++ mario.dir ++ ".gif"
   in collage w' h'
       [ rect w h  |> filled (rgb 174 238 238)
       , rect w 50 |> filled (rgb 74 163 41)
